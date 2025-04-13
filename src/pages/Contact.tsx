@@ -47,13 +47,13 @@ const Contact: React.FC = () => {
                 Siga-nos para novidades e atualizações
               </p>
               <a
-                href="https://instagram.com/engeo.topocap"
+                href="https://www.instagram.com/grupoengeo.topocap/?utm_source=ig_web_button_share_sheet"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-colors"
               >
                 <Instagram className="w-5 h-5 mr-2" />
-                @engeo.topocap
+                @grupoengeo.topocap
               </a>
             </div>
 
@@ -65,13 +65,13 @@ const Contact: React.FC = () => {
                 Acompanhe nosso trabalho
               </p>
               <a
-                href="https://facebook.com/engeotopocap"
+                href="https://www.facebook.com/grupoengeo.topocap"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <Facebook className="w-5 h-5 mr-2" />
-                /engeotopocap
+                /grupoengeo.topocap
               </a>
             </div>
           </div>
@@ -85,12 +85,12 @@ const Contact: React.FC = () => {
             <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4" />
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Localização</h2>
             <p className="text-xl text-gray-600">
-              São Paulo, SP
+              Presidente Venceslau, São Paulo
             </p>
           </div>
           <div className="aspect-w-16 aspect-h-9">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0488551113!2d-46.875494486885!3d-23.681531454334287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1650000000000!5m2!1spt-BR!2sbr"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d298.6077127479532!2d-51.84694478639892!3d-21.87237702687785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDUyJzIwLjciUyA1McKwNTAnNDguOSJX!5e1!3m2!1spt-BR!2sbr!4v1744566690967!5m2!1spt-BR!2sbr"
               width="100%"
               height="450"
               style={{ border: 0 }}

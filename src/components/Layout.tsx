@@ -14,7 +14,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       {/* Header */}
       <header className="bg-white shadow-sm fixed w-full z-10">
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-blue-600">Engeo & Topocap</Link>
+          <Link to="/" className="text-2xl font-bold text-blue-600">ENGEO & TOPOCAP</Link>
           <div className="hidden md:flex space-x-6">
             <Link to="/" className={isActive('/')}>Início</Link>
             <Link to="/sobre" className={isActive('/sobre')}>Sobre</Link>
@@ -48,14 +48,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </a>
                 <div className="flex items-center text-gray-400">
                   <MapPin className="w-5 h-5 mr-2" />
-                  São Paulo, SP
+                  R. Almirante Barroso, 425 - Centro, Presidente Venceslau - SP, 19406-014
                 </div>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">Redes Sociais</h3>
               <div className="flex space-x-4">
-                <a href="https://instagram.com/engeo.topocap" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                <a href="https://www.instagram.com/grupoengeo.topocap/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
                   <Instagram className="w-6 h-6" />
                 </a>
                 <a href="https://facebook.com/engeotopocap" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">

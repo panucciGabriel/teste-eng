@@ -43,7 +43,7 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                 Soluções em Engenharia e Georreferenciamento
               </h1>
               <p className="text-xl text-gray-600 mb-8">
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?auto=format&fit=crop&w=800&q=80"
+                src="https://scontent.fmii3-1.fna.fbcdn.net/v/t39.30808-6/484351759_626447903525630_3511135243866830448_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Uzx4JszNX8IQ7kNvwH0jGkB&_nc_oc=Adk8Se3P6CHttRuCIddm54OIjVl-XxkFhoMGWQhFjdY14v5GDKrLa6QVWD7Y22rhIqQ&_nc_zt=23&_nc_ht=scontent.fmii3-1.fna&_nc_gid=gpTs2bLwiTBlVS4Kulagbg&oh=00_AfGLM53PUmQ3RVpDmXdQJmb4E57pVLiOryUGL8VS5J7sHg&oe=6801C7CE"
                 alt="Engenharia e Topografia"
                 className="rounded-lg shadow-xl"
               />
