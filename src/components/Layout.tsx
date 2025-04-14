@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Phone, MapPin, Instagram, Facebook, X, Menu } from 'lucide-react';
+import { useState as reactUseState } from 'react';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const isActive = (path: string) => {
     return location.pathname === path ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600';
@@ -14,7 +16,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       {/* Header */}
       <header className="bg-white shadow-sm fixed w-full z-10">
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-blue-600">ENGEO & TOPOCAP</Link>
+          <Link to="/" className="text-2xl font-bold text-blue-900">ENGEO & TOPOCAP</Link>
+          <button
+            className="md:hidden text-gray-600 hover:text-blue-600"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>          
           <div className="hidden md:flex space-x-6">
             <Link to="/" className={isActive('/')}>Início</Link>
             <Link to="/sobre" className={isActive('/sobre')}>Sobre</Link>
@@ -22,6 +30,39 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <Link to="/contato" className={isActive('/contato')}>Contato</Link>
           </div>
         </nav>
+       {/* Menu hambúrguer para telas pequenas */}
+       {menuOpen && (
+          <div className="md:hidden flex flex-col items-start bg-white shadow-md p-4 space-y-2">
+            <Link
+              to="/"
+              className={`block w-full py-2 px-4 text-left ${isActive('/')}`}
+              onClick={() => setMenuOpen(false)} // Fecha o menu ao clicar
+            >
+              Início
+            </Link>
+            <Link
+              to="/sobre"
+              className={`block w-full py-2 px-4 text-left ${isActive('/sobre')}`}
+              onClick={() => setMenuOpen(false)} // Fecha o menu ao clicar
+            >
+              Sobre
+            </Link>
+            <Link
+              to="/servicos"
+              className={`block w-full py-2 px-4 text-left ${isActive('/servicos')}`}
+              onClick={() => setMenuOpen(false)} // Fecha o menu ao clicar
+            >
+              Serviços
+            </Link>
+            <Link
+              to="/contato"
+              className={`block w-full py-2 px-4 text-left ${isActive('/contato')}`}
+              onClick={() => setMenuOpen(false)} // Fecha o menu ao clicar
+            >
+              Contato
+            </Link>
+          </div>
+        )}
       </header>
 
       {/* Main Content */}
@@ -83,4 +124,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   );
 };
 
+function useState<T>(initialValue: T): [T, React.Dispatch<React.SetStateAction<T>>] {
+  return reactUseState(initialValue);
+}
+
 export default Layout;
+
